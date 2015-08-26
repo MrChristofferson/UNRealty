@@ -1,0 +1,24 @@
+<div class="eventsContainer">
+  <h1>Events</h1>
+  <div class="eventsTableList">
+    <table class="table table-condensed">
+      <thead>
+    		<tr>
+    		  <th>Event Name</th>
+    		  <th>Location</th>
+    		  <th>Date</th>
+    		  <th>Edit</th>
+    		</tr>
+      </thead>
+      <tbody>
+    		<tr ng-repeat="event in events">
+    		  <td>{{event.eventName}}</td>
+    		  <td>{{event.eventLocation}}</td>
+    		  <td>{{event.eventDetails}}</td>
+    		  <td><a href="#/edit-event/{{event.id}}" class="btn btn-default btn-sm sweep"><i class="glyphicon glyphicon-pencil"></i></button></td>
+    		</tr>
+      </tbody>
+    </table>
+  </div>
+  <a class="btn btn-primary btn-lg sweep" href="#/add-event">Add New event</a>
+</div>

@@ -1,0 +1,30 @@
+{
+  "name": "unrealty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^11.0.1",
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-serve": "^1.0.0",
+    "gulp-util": "^3.0.6",
+    "rimraf": "^2.4.2",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "angular": "^1.4.4",
+    "angular-google-chart": "https://registry.npmjs.org/angular-google-chart/-/angular-google-chart-0.0.11.tgz",
+    "angular-route": "^1.4.4",
+    "bootstrap": "^3.3.5",
+    "font-awesome": "^4.4.0",
+    "jquery": "^2.1.4",
+    "lodash": "^3.10.1",
+    "normalize.css": "^3.0.3"
+  }
+}

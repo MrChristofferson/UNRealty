@@ -1,0 +1,830 @@
+{
+  "agents": [
+    {
+      "id": 1,
+      "name": "Chaz Fertal"
+    },
+    {
+      "id": 2,
+      "name": "John Piper"
+    },
+    {
+      "id": 3,
+      "name": "Kevin Kauffman"
+    }
+  ],
+  "events": [
+    {
+      "id": "55dd3731a1e641aaacbd1f57",
+      "eventLocation": "237 Durland Place",
+      "eventDetails": "7-21-2015",
+      "eventName": "est ipsum",
+      "salesAgentId": 3
+    },
+    {
+      "id": "55dd373122678611c16cfd2f",
+      "eventLocation": "799 Hewes Street",
+      "eventDetails": "5-11-2015",
+      "eventName": "proident irure",
+      "salesAgentId": 1
+    },
+    {
+      "id": "55dd37313d42fc152e21a336",
+      "eventLocation": "544 Randolph Street",
+      "eventDetails": "7-14-2015",
+      "eventName": "laborum labore",
+      "salesAgentId": 1
+    },
+    {
+      "id": "55dd3731f6a687ded275b084",
+      "eventLocation": "915 Mill Road",
+      "eventDetails": "5-27-2015",
+      "eventName": "officia adipisicing",
+      "salesAgentId": 2
+    },
+    {
+      "id": "55dd3731d490d5026886d339",
+      "eventLocation": "888 Williams Place",
+      "eventDetails": "2-18-2015",
+      "eventName": "veniam nisi",
+      "salesAgentId": 2
+    },
+    {
+      "id": "55dd373173f15b740f71846f",
+      "eventLocation": "776 Seacoast Terrace",
+      "eventDetails": "6-04-2015",
+      "eventName": "eiusmod dolor",
+      "salesAgentId": 1
+    },
+    {
+      "id": "55dd3731b4fddd7d8d6726ae",
+      "eventLocation": "891 Hendrickson Street",
+      "eventDetails": "2-27-2015",
+      "eventName": "sit excepteur",
+      "salesAgentId": 3
+    },
+    {
+      "id": "55dd373121e3c712af36ce8b",
+      "eventLocation": "139 Conduit Boulevard",
+      "eventDetails": "4-20-2015",
+      "eventName": "est excepteur",
+      "salesAgentId": 2
+    },
+    {
+      "id": "55dd37319f7f5608e8dfb379",
+      "eventLocation": "191 Kingsway Place",
+      "eventDetails": "7-05-2015",
+      "eventName": "est quis",
+      "salesAgentId": 3
+    },
+    {
+      "id": "55dd3731277498f9affc938b",
+      "eventLocation": "569 Dewey Place",
+      "eventDetails": "5-22-2015",
+      "eventName": "ipsum sunt",
+      "salesAgentId": 2
+    },
+    {
+      "id": "55dd37319ad3aa2cc4c1446c",
+      "eventLocation": "218 Polar Street",
+      "eventDetails": "6-18-2015",
+      "eventName": "deserunt ullamco",
+      "salesAgentId": 2
+    },
+    {
+      "id": "55dd3731e14c25fe4b790f50",
+      "eventLocation": "904 Vanderveer Place",
+      "eventDetails": "8-18-2015",
+      "eventName": "nisi in",
+      "salesAgentId": 1
+    },
+    {
+      "id": "55dd3731e522f33e1fd1c799",
+      "eventLocation": "336 Beach Place",
+      "eventDetails": "2-16-2015",
+      "eventName": "enim mollit",
+      "salesAgentId": 2
+    },
+    {
+      "id": "55dd3731b71051e8356605c9",
+      "eventLocation": "511 Schenck Avenue",
+      "eventDetails": "3-04-2015",
+      "eventName": "dolor qui",
+      "salesAgentId": 2
+    },
+    {
+      "id": "55dd3731105e00086442afa2",
+      "eventLocation": "828 Boynton Place",
+      "eventDetails": "6-21-2015",
+      "eventName": "ex culpa",
+      "salesAgentId": 2
+    },
+    {
+      "id": "55dd3731f73d0b3d73c5856d",
+      "eventLocation": "599 Tabor Court",
+      "eventDetails": "4-06-2015",
+      "eventName": "sint id",
+      "salesAgentId": 1
+    },
+    {
+      "id": "55dd373123773b9c0c30b42f",
+      "eventLocation": "501 Kensington Street",
+      "eventDetails": "5-09-2015",
+      "eventName": "id consequat",
+      "salesAgentId": 1
+    },
+    {
+      "id": "55dd3731f7a841b58bca603b",
+      "eventLocation": "264 Folsom Place",
+      "eventDetails": "2-11-2015",
+      "eventName": "do veniam",
+      "salesAgentId": 2
+    },
+    {
+      "id": "55dd3731511b6cdfae74d6de",
+      "eventLocation": "410 Williamsburg Street",
+      "eventDetails": "3-13-2015",
+      "eventName": "cupidatat dolor",
+      "salesAgentId": 1
+    },
+    {
+      "id": "55dd3731a32c0d32781b82f9",
+      "eventLocation": "362 Belvidere Street",
+      "eventDetails": "7-22-2015",
+      "eventName": "fugiat incididunt",
+      "salesAgentId": 2
+    },
+    {
+      "id": "55dd3731f9e0c9b70564f37f",
+      "eventLocation": "525 Neptune Avenue",
+      "eventDetails": "1-31-2015",
+      "eventName": "aliqua aute",
+      "salesAgentId": 2
+    },
+    {
+      "id": "55dd373124d35eed4f9c17da",
+      "eventLocation": "911 Hoyt Street",
+      "eventDetails": "5-12-2015",
+      "eventName": "cupidatat ad",
+      "salesAgentId": 1
+    },
+    {
+      "id": "55dd3731cc5fbdadc7ea53ff",
+      "eventLocation": "163 Seigel Court",
+      "eventDetails": "3-15-2015",
+      "eventName": "nostrud in",
+      "salesAgentId": 1
+    },
+    {
+      "id": "55dd37311e6199119b685b35",
+      "eventLocation": "789 Lake Street",
+      "eventDetails": "5-11-2015",
+      "eventName": "sint nisi",
+      "salesAgentId": 1
+    },
+    {
+      "id": "55dd3731a9696a0ccdcd4baa",
+      "eventLocation": "105 Auburn Place",
+      "eventDetails": "3-15-2015",
+      "eventName": "deserunt in",
+      "salesAgentId": 1
+    },
+    {
+      "id": "55dd3731c0dc8ed63ff961f2",
+      "eventLocation": "320 Mersereau Court",
+      "eventDetails": "1-04-2015",
+      "eventName": "ipsum nulla",
+      "salesAgentId": 1
+    },
+    {
+      "id": "55dd373138ac72aa2ae73097",
+      "eventLocation": "540 Downing Street",
+      "eventDetails": "2-28-2015",
+      "eventName": "non consequat",
+      "salesAgentId": 1
+    },
+    {
+      "id": "55dd3731f524a66b241e9a45",
+      "eventLocation": "264 Hoyts Lane",
+      "eventDetails": "3-10-2015",
+      "eventName": "sint esse",
+      "salesAgentId": 3
+    },
+    {
+      "id": "55dd37319aa3dfbd02a2fd85",
+      "eventLocation": "549 Nichols Avenue",
+      "eventDetails": "1-28-2015",
+      "eventName": "est cupidatat",
+      "salesAgentId": 3
+    },
+    {
+      "id": "55dd3731ea4c8476769055f6",
+      "eventLocation": "628 Howard Place",
+      "eventDetails": "5-25-2015",
+      "eventName": "voluptate duis",
+      "salesAgentId": 2
+    }
+  ],
+  "properties": [
+    {
+      "id": "55dd2f3c70b04364a1aadd70",
+      "salesAgentId": 3,
+      "housePrice": 130519.38,
+      "clientName": "James Lowery",
+      "email": "jameslowery@slofast.com",
+      "phone": "+1 (800) 597-2317",
+      "address": "842 Schenck Street, Phoenix, AZ",
+      "latitude": 33.5161,
+      "longitude": 112.3739,
+      "img": "http://flathash.com/133866"
+    },
+    {
+      "id": "55dd2f3c61cde15ed81aab80",
+      "salesAgentId": 3,
+      "housePrice": 131589.86,
+      "clientName": "Diana Lucas",
+      "email": "dianalucas@slofast.com",
+      "phone": "+1 (891) 449-3231",
+      "address": "206 Dahill Road, Phoenix, AZ",
+      "latitude": 33.7725,
+      "longitude": 112.9532,
+      "img": "http://flathash.com/606485"
+    },
+    {
+      "id": "55dd2f3c0b55d73311ad14b9",
+      "salesAgentId": 1,
+      "housePrice": 77000.71,
+      "clientName": "Lynn Shepherd",
+      "email": "lynnshepherd@slofast.com",
+      "phone": "+1 (806) 506-3234",
+      "address": "580 Chase Court, Phoenix, AZ",
+      "latitude": 33.0801,
+      "longitude": 112.6063,
+      "img": "http://flathash.com/204767"
+    },
+    {
+      "id": "55dd2f3cfaf09a0c911541a0",
+      "salesAgentId": 2,
+      "housePrice": 77520.92,
+      "clientName": "Ava Bright",
+      "email": "avabright@slofast.com",
+      "phone": "+1 (905) 498-2535",
+      "address": "725 Polar Street, Phoenix, AZ",
+      "latitude": 33.1562,
+      "longitude": 112.2782,
+      "img": "http://flathash.com/57746"
+    },
+    {
+      "id": "55dd2f3c12dec94764501ebe",
+      "salesAgentId": 2,
+      "housePrice": 103005.26,
+      "clientName": "Elsie Sharpe",
+      "email": "elsiesharpe@slofast.com",
+      "phone": "+1 (930) 405-2444",
+      "address": "502 Hinckley Place, Phoenix, AZ",
+      "latitude": 33.2124,
+      "longitude": 112.8379,
+      "img": "http://flathash.com/401073"
+    },
+    {
+      "id": "55dd2f3c6bb037d02c553a67",
+      "salesAgentId": 1,
+      "housePrice": 137776.89,
+      "clientName": "Dionne Mcmillan",
+      "email": "dionnemcmillan@slofast.com",
+      "phone": "+1 (950) 490-2169",
+      "address": "992 Sands Street, Phoenix, AZ",
+      "latitude": 33.4081,
+      "longitude": 112.6991,
+      "img": "http://flathash.com/47"
+    },
+    {
+      "id": "55dd2f3c0900d8a0d75c7876",
+      "salesAgentId": 3,
+      "housePrice": 66094.3,
+      "clientName": "Atkins Goodman",
+      "email": "atkinsgoodman@slofast.com",
+      "phone": "+1 (939) 457-3661",
+      "address": "429 Milford Street, Phoenix, AZ",
+      "latitude": 33.7366,
+      "longitude": 112.4987,
+      "img": "http://flathash.com/542671"
+    },
+    {
+      "id": "55dd2f3c5d46d243953f2443",
+      "salesAgentId": 2,
+      "housePrice": 78621.99,
+      "clientName": "Kidd Gentry",
+      "email": "kiddgentry@slofast.com",
+      "phone": "+1 (806) 504-2718",
+      "address": "388 Woodbine Street, Phoenix, AZ",
+      "latitude": 33.5078,
+      "longitude": 112.8471,
+      "img": "http://flathash.com/826999"
+    },
+    {
+      "id": "55dd2f3cf980fdd850eb84c2",
+      "salesAgentId": 2,
+      "housePrice": 72607.57,
+      "clientName": "Heath Campos",
+      "email": "heathcampos@slofast.com",
+      "phone": "+1 (983) 580-3129",
+      "address": "831 Beach Place, Phoenix, AZ",
+      "latitude": 33.9801,
+      "longitude": 112.1971,
+      "img": "http://flathash.com/318169"
+    },
+    {
+      "id": "55dd2f3c7d2bf6abf0c1ea0c",
+      "salesAgentId": 1,
+      "housePrice": 112161.27,
+      "clientName": "Wiggins Farley",
+      "email": "wigginsfarley@slofast.com",
+      "phone": "+1 (812) 427-2551",
+      "address": "759 Scott Avenue, Phoenix, AZ",
+      "latitude": 33.5727,
+      "longitude": 112.5791,
+      "img": "http://flathash.com/258261"
+    },
+    {
+      "id": "55dd2f3c7bf0d413fe97ffa0",
+      "salesAgentId": 3,
+      "housePrice": 83069.41,
+      "clientName": "Blake Blake",
+      "email": "blakeblake@slofast.com",
+      "phone": "+1 (931) 558-3411",
+      "address": "282 Schaefer Street, Phoenix, AZ",
+      "latitude": 33.3369,
+      "longitude": 112.6164,
+      "img": "http://flathash.com/677286"
+    },
+    {
+      "id": "55dd2f3c7e876eaf12fead23",
+      "salesAgentId": 3,
+      "housePrice": 81107.08,
+      "clientName": "Phelps Lindsay",
+      "email": "phelpslindsay@slofast.com",
+      "phone": "+1 (930) 517-3122",
+      "address": "728 Norfolk Street, Phoenix, AZ",
+      "latitude": 33.8628,
+      "longitude": 112.6245,
+      "img": "http://flathash.com/908549"
+    },
+    {
+      "id": "55dd2f3c28083b04d641bba0",
+      "salesAgentId": 1,
+      "housePrice": 61812.57,
+      "clientName": "Rogers Mcleod",
+      "email": "rogersmcleod@slofast.com",
+      "phone": "+1 (868) 468-2100",
+      "address": "979 Crooke Avenue, Phoenix, AZ",
+      "latitude": 33.9644,
+      "longitude": 112.7726,
+      "img": "http://flathash.com/111584"
+    },
+    {
+      "id": "55dd2f3cdad92e2dee6da450",
+      "salesAgentId": 2,
+      "housePrice": 135542.5,
+      "clientName": "Bryan Mcfadden",
+      "email": "bryanmcfadden@slofast.com",
+      "phone": "+1 (843) 588-3576",
+      "address": "365 Matthews Place, Phoenix, AZ",
+      "latitude": 33.1295,
+      "longitude": 112.2653,
+      "img": "http://flathash.com/27187"
+    },
+    {
+      "id": "55dd2f3c042b7193d6a33b7a",
+      "salesAgentId": 1,
+      "housePrice": 130139.98,
+      "clientName": "Jill Hickman",
+      "email": "jillhickman@slofast.com",
+      "phone": "+1 (893) 545-2317",
+      "address": "621 Fenimore Street, Phoenix, AZ",
+      "latitude": 33.2015,
+      "longitude": 112.8913,
+      "img": "http://flathash.com/303945"
+    },
+    {
+      "id": "55dd2f3c4ffcfdd903a3592d",
+      "salesAgentId": 3,
+      "housePrice": 131603.86,
+      "clientName": "Lynch Alvarado",
+      "email": "lynchalvarado@slofast.com",
+      "phone": "+1 (944) 442-3757",
+      "address": "669 Exeter Street, Phoenix, AZ",
+      "latitude": 33.8247,
+      "longitude": 112.6418,
+      "img": "http://flathash.com/154681"
+    },
+    {
+      "id": "55dd2f3c0369e0f86d5899d7",
+      "salesAgentId": 1,
+      "housePrice": 101227.07,
+      "clientName": "Mollie Giles",
+      "email": "molliegiles@slofast.com",
+      "phone": "+1 (900) 522-2531",
+      "address": "514 Waldane Court, Phoenix, AZ",
+      "latitude": 33.6974,
+      "longitude": 112.2014,
+      "img": "http://flathash.com/547967"
+    },
+    {
+      "id": "55dd2f3cbc34454d296907c0",
+      "salesAgentId": 3,
+      "housePrice": 81631.58,
+      "clientName": "Wright Reese",
+      "email": "wrightreese@slofast.com",
+      "phone": "+1 (820) 412-3467",
+      "address": "767 Orient Avenue, Phoenix, AZ",
+      "latitude": 33.0866,
+      "longitude": 112.4871,
+      "img": "http://flathash.com/275713"
+    },
+    {
+      "id": "55dd2f3c381740064c8c47ee",
+      "salesAgentId": 2,
+      "housePrice": 140963.64,
+      "clientName": "Neal Bowers",
+      "email": "nealbowers@slofast.com",
+      "phone": "+1 (884) 584-2851",
+      "address": "470 Furman Street, Phoenix, AZ",
+      "latitude": 33.3965,
+      "longitude": 112.8271,
+      "img": "http://flathash.com/394496"
+    },
+    {
+      "id": "55dd2f3cc2889017e5de1803",
+      "salesAgentId": 3,
+      "housePrice": 147118.18,
+      "clientName": "Clayton Holland",
+      "email": "claytonholland@slofast.com",
+      "phone": "+1 (975) 403-3720",
+      "address": "381 Bayview Avenue, Phoenix, AZ",
+      "latitude": 33.865,
+      "longitude": 112.8601,
+      "img": "http://flathash.com/324084"
+    },
+    {
+      "id": "55dd2f3c60a0553e634803bc",
+      "salesAgentId": 3,
+      "housePrice": 97552.92,
+      "clientName": "Faith Clemons",
+      "email": "faithclemons@slofast.com",
+      "phone": "+1 (878) 440-3547",
+      "address": "895 Meadow Street, Phoenix, AZ",
+      "latitude": 33.9822,
+      "longitude": 112.6327,
+      "img": "http://flathash.com/128423"
+    },
+    {
+      "id": "55dd2f3c82ce7bfcbed59ba3",
+      "salesAgentId": 1,
+      "housePrice": 113058.99,
+      "clientName": "Georgia Foster",
+      "email": "georgiafoster@slofast.com",
+      "phone": "+1 (989) 590-3767",
+      "address": "908 Stone Avenue, Phoenix, AZ",
+      "latitude": 33.4467,
+      "longitude": 112.2671,
+      "img": "http://flathash.com/303016"
+    },
+    {
+      "id": "55dd2f3c54dfc3faf21931b9",
+      "salesAgentId": 1,
+      "housePrice": 72559.34,
+      "clientName": "Anna Hughes",
+      "email": "annahughes@slofast.com",
+      "phone": "+1 (859) 444-3445",
+      "address": "260 Boerum Street, Phoenix, AZ",
+      "latitude": 33.8501,
+      "longitude": 112.2092,
+      "img": "http://flathash.com/798658"
+    },
+    {
+      "id": "55dd2f3ca6210f91e6f5a29b",
+      "salesAgentId": 2,
+      "housePrice": 92940.97,
+      "clientName": "Annmarie Ramsey",
+      "email": "annmarieramsey@slofast.com",
+      "phone": "+1 (941) 479-3114",
+      "address": "518 Crown Street, Phoenix, AZ",
+      "latitude": 33.64,
+      "longitude": 112.4917,
+      "img": "http://flathash.com/962744"
+    },
+    {
+      "id": "55dd2f3c47ae516d4fb178f4",
+      "salesAgentId": 2,
+      "housePrice": 68404.42,
+      "clientName": "House Schultz",
+      "email": "houseschultz@slofast.com",
+      "phone": "+1 (956) 581-2719",
+      "address": "668 Dekoven Court, Phoenix, AZ",
+      "latitude": 33.1488,
+      "longitude": 112.8296,
+      "img": "http://flathash.com/720461"
+    },
+    {
+      "id": "55dd2f3c1e6dde8612313daa",
+      "salesAgentId": 2,
+      "housePrice": 96810.26,
+      "clientName": "Graciela Garrett",
+      "email": "gracielagarrett@slofast.com",
+      "phone": "+1 (955) 461-2659",
+      "address": "497 Guider Avenue, Phoenix, AZ",
+      "latitude": 33.344,
+      "longitude": 112.886,
+      "img": "http://flathash.com/153024"
+    },
+    {
+      "id": "55dd2f3c11d8727dca6852d3",
+      "salesAgentId": 1,
+      "housePrice": 83324.34,
+      "clientName": "Oneill Espinoza",
+      "email": "oneillespinoza@slofast.com",
+      "phone": "+1 (907) 480-2706",
+      "address": "183 Provost Street, Phoenix, AZ",
+      "latitude": 33.405,
+      "longitude": 112.6034,
+      "img": "http://flathash.com/22091"
+    },
+    {
+      "id": "55dd2f3c434cb65a593d1b4e",
+      "salesAgentId": 2,
+      "housePrice": 146614.61,
+      "clientName": "Williams Bowen",
+      "email": "williamsbowen@slofast.com",
+      "phone": "+1 (859) 582-3600",
+      "address": "193 Florence Avenue, Phoenix, AZ",
+      "latitude": 33.5326,
+      "longitude": 112.6762,
+      "img": "http://flathash.com/185712"
+    },
+    {
+      "id": "55dd2f3c5c0e79301b319752",
+      "salesAgentId": 1,
+      "housePrice": 104324.12,
+      "clientName": "Kari Cabrera",
+      "email": "karicabrera@slofast.com",
+      "phone": "+1 (857) 586-3709",
+      "address": "864 Harrison Place, Phoenix, AZ",
+      "latitude": 33.5438,
+      "longitude": 112.9913,
+      "img": "http://flathash.com/783262"
+    },
+    {
+      "id": "55dd2f3c4d162bd219d982f9",
+      "salesAgentId": 2,
+      "housePrice": 103526.07,
+      "clientName": "Herring Pearson",
+      "email": "herringpearson@slofast.com",
+      "phone": "+1 (848) 573-2433",
+      "address": "919 Eastern Parkway, Phoenix, AZ",
+      "latitude": 33.3082,
+      "longitude": 112.318,
+      "img": "http://flathash.com/326891"
+    },
+    {
+      "id": "55dd2f3ce426af7cfe85bb09",
+      "salesAgentId": 3,
+      "housePrice": 128312.89,
+      "clientName": "Brianna Buck",
+      "email": "briannabuck@slofast.com",
+      "phone": "+1 (896) 416-2933",
+      "address": "500 Desmond Court, Phoenix, AZ",
+      "latitude": 33.7589,
+      "longitude": 112.6394,
+      "img": "http://flathash.com/393125"
+    },
+    {
+      "id": "55dd2f3cfc56a4424f15e539",
+      "salesAgentId": 2,
+      "housePrice": 101271.41,
+      "clientName": "Knowles Evans",
+      "email": "knowlesevans@slofast.com",
+      "phone": "+1 (882) 518-3320",
+      "address": "620 Sheffield Avenue, Phoenix, AZ",
+      "latitude": 33.2251,
+      "longitude": 112.6698,
+      "img": "http://flathash.com/277286"
+    },
+    {
+      "id": "55dd2f3c9d136404bb7c6199",
+      "salesAgentId": 3,
+      "housePrice": 74577.73,
+      "clientName": "Dodson Kirkland",
+      "email": "dodsonkirkland@slofast.com",
+      "phone": "+1 (894) 591-3522",
+      "address": "366 Lyme Avenue, Phoenix, AZ",
+      "latitude": 33.2582,
+      "longitude": 112.0435,
+      "img": "http://flathash.com/527125"
+    },
+    {
+      "id": "55dd2f3ced69b95262f65770",
+      "salesAgentId": 2,
+      "housePrice": 134160.3,
+      "clientName": "Lowery Dickson",
+      "email": "lowerydickson@slofast.com",
+      "phone": "+1 (974) 456-2819",
+      "address": "609 Alice Court, Phoenix, AZ",
+      "latitude": 33.5874,
+      "longitude": 112.7448,
+      "img": "http://flathash.com/571939"
+    },
+    {
+      "id": "55dd2f3c15ea29e6323f6c94",
+      "salesAgentId": 2,
+      "housePrice": 132773.8,
+      "clientName": "Nicole Gilmore",
+      "email": "nicolegilmore@slofast.com",
+      "phone": "+1 (962) 403-2324",
+      "address": "334 Boardwalk , Phoenix, AZ",
+      "latitude": 33.3746,
+      "longitude": 112.3433,
+      "img": "http://flathash.com/937187"
+    },
+    {
+      "id": "55dd2f3c781a1161798a4dc7",
+      "salesAgentId": 1,
+      "housePrice": 118056.02,
+      "clientName": "Blevins Salinas",
+      "email": "blevinssalinas@slofast.com",
+      "phone": "+1 (925) 517-3722",
+      "address": "416 Tilden Avenue, Phoenix, AZ",
+      "latitude": 33.411,
+      "longitude": 112.0702,
+      "img": "http://flathash.com/746982"
+    },
+    {
+      "id": "55dd2f3c00d82b06f3784341",
+      "salesAgentId": 1,
+      "housePrice": 134773.43,
+      "clientName": "Hurst Wilder",
+      "email": "hurstwilder@slofast.com",
+      "phone": "+1 (857) 481-2036",
+      "address": "348 Roder Avenue, Phoenix, AZ",
+      "latitude": 33.9055,
+      "longitude": 112.7326,
+      "img": "http://flathash.com/116905"
+    },
+    {
+      "id": "55dd2f3cd873e35e1dba3ca5",
+      "salesAgentId": 2,
+      "housePrice": 145872.42,
+      "clientName": "Krystal Gray",
+      "email": "krystalgray@slofast.com",
+      "phone": "+1 (924) 558-3401",
+      "address": "473 Ford Street, Phoenix, AZ",
+      "latitude": 33.871,
+      "longitude": 112.4584,
+      "img": "http://flathash.com/273492"
+    },
+    {
+      "id": "55dd2f3c0898923b440096ef",
+      "salesAgentId": 2,
+      "housePrice": 133923.24,
+      "clientName": "Francis Foreman",
+      "email": "francisforeman@slofast.com",
+      "phone": "+1 (868) 503-3600",
+      "address": "839 Harbor Court, Phoenix, AZ",
+      "latitude": 33.3153,
+      "longitude": 112.7727,
+      "img": "http://flathash.com/858848"
+    },
+    {
+      "id": "55dd2f3c11adc08d775b05c1",
+      "salesAgentId": 2,
+      "housePrice": 115502.58,
+      "clientName": "Salas Hansen",
+      "email": "salashansen@slofast.com",
+      "phone": "+1 (878) 495-3591",
+      "address": "481 Monitor Street, Phoenix, AZ",
+      "latitude": 33.2896,
+      "longitude": 112.8177,
+      "img": "http://flathash.com/168759"
+    },
+    {
+      "id": "55dd2f3cb968dc6b2bab098d",
+      "salesAgentId": 1,
+      "housePrice": 141563.97,
+      "clientName": "Julianne Rich",
+      "email": "juliannerich@slofast.com",
+      "phone": "+1 (910) 441-2252",
+      "address": "767 Lancaster Avenue, Phoenix, AZ",
+      "latitude": 33.7496,
+      "longitude": 112.7258,
+      "img": "http://flathash.com/97180"
+    },
+    {
+      "id": "55dd2f3c2e6bddbb303f96a4",
+      "salesAgentId": 1,
+      "housePrice": 136059.32,
+      "clientName": "Laverne Booker",
+      "email": "lavernebooker@slofast.com",
+      "phone": "+1 (906) 590-3678",
+      "address": "446 Beaumont Street, Phoenix, AZ",
+      "latitude": 33.5071,
+      "longitude": 112.4846,
+      "img": "http://flathash.com/822607"
+    },
+    {
+      "id": "55dd2f3cad3d7ab5be4a3942",
+      "salesAgentId": 3,
+      "housePrice": 87826.54,
+      "clientName": "Roberts Cooke",
+      "email": "robertscooke@slofast.com",
+      "phone": "+1 (806) 563-3274",
+      "address": "226 Turner Place, Phoenix, AZ",
+      "latitude": 33.3689,
+      "longitude": 112.5174,
+      "img": "http://flathash.com/8812"
+    },
+    {
+      "id": "55dd2f3ce322d469e518ec77",
+      "salesAgentId": 3,
+      "housePrice": 146934.46,
+      "clientName": "Mckinney Vinson",
+      "email": "mckinneyvinson@slofast.com",
+      "phone": "+1 (857) 469-3112",
+      "address": "884 Miller Place, Phoenix, AZ",
+      "latitude": 33.0737,
+      "longitude": 112.8752,
+      "img": "http://flathash.com/746335"
+    },
+    {
+      "id": "55dd2f3c7dae0fd59bf4e5ee",
+      "salesAgentId": 3,
+      "housePrice": 92352.59,
+      "clientName": "Leila Waters",
+      "email": "leilawaters@slofast.com",
+      "phone": "+1 (825) 421-3632",
+      "address": "417 Paerdegat Avenue, Phoenix, AZ",
+      "latitude": 33.7835,
+      "longitude": 112.6514,
+      "img": "http://flathash.com/90818"
+    },
+    {
+      "id": "55dd2f3c698c6ada30004819",
+      "salesAgentId": 1,
+      "housePrice": 125959.14,
+      "clientName": "Suarez Chandler",
+      "email": "suarezchandler@slofast.com",
+      "phone": "+1 (822) 528-2517",
+      "address": "923 Lorraine Street, Phoenix, AZ",
+      "latitude": 33.077,
+      "longitude": 112.0372,
+      "img": "http://flathash.com/753927"
+    },
+    {
+      "id": "55dd2f3c3266deb472252374",
+      "salesAgentId": 1,
+      "housePrice": 129617.24,
+      "clientName": "Brock Kirk",
+      "email": "brockkirk@slofast.com",
+      "phone": "+1 (958) 505-3263",
+      "address": "384 Garnet Street, Phoenix, AZ",
+      "latitude": 33.3276,
+      "longitude": 112.3771,
+      "img": "http://flathash.com/480795"
+    },
+    {
+      "id": "55dd2f3cb30b1a680274fd81",
+      "salesAgentId": 3,
+      "housePrice": 130118.32,
+      "clientName": "Robyn Melton",
+      "email": "robynmelton@slofast.com",
+      "phone": "+1 (894) 466-3671",
+      "address": "968 Gates Avenue, Phoenix, AZ",
+      "latitude": 33.1138,
+      "longitude": 112.0803,
+      "img": "http://flathash.com/67124"
+    },
+    {
+      "id": "55dd2f3cfdba28b522ecba5c",
+      "salesAgentId": 3,
+      "housePrice": 112557.18,
+      "clientName": "Pacheco Lamb",
+      "email": "pachecolamb@slofast.com",
+      "phone": "+1 (843) 541-2242",
+      "address": "653 Oliver Street, Phoenix, AZ",
+      "latitude": 33.5561,
+      "longitude": 112.4955,
+      "img": "http://flathash.com/893312"
+    },
+    {
+      "id": "55dd2f3c82c05d7299f1aa4a",
+      "salesAgentId": 3,
+      "housePrice": 113972.24,
+      "clientName": "Holcomb Jenkins",
+      "email": "holcombjenkins@slofast.com",
+      "phone": "+1 (948) 599-3110",
+      "address": "631 Harkness Avenue, Phoenix, AZ",
+      "latitude": 33.1143,
+      "longitude": 112.781,
+      "img": "http://flathash.com/567092"
+    }
+  ]
+}

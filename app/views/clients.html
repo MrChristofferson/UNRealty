@@ -1,0 +1,26 @@
+<div class="clientsContainer">
+  <h1>Clients</h1>
+  <div class="clientsTableList">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Phone</th>
+          <th>Email</th>
+          <th>Address</th>
+          <th>Edit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="client in clients">
+          <td>{{client.clientName}}</td>
+          <td>{{client.phone}}</td>
+          <td>{{client.email}}</td>
+          <td>{{client.address}}</td>
+          <td><a href="#/edit-client/{{client.id}}" class="btn btn-default btn-sm sweep"><i class="glyphicon glyphicon-pencil"></i></button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <a class="btn btn-primary btn-lg sweep" href="#/add-client">Add New Client</a>
+</div>

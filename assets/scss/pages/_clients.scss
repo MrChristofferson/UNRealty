@@ -1,0 +1,16 @@
+.clientsContainer {
+    margin-left: 5%;
+    h1 {
+        text-align: center;
+        font-size: 40pt;
+    }
+    .clientsTableList {
+        overflow-y: scroll;
+        font-size: 13pt;
+        width: 100%;
+        height: 475px;
+    }
+    .btn-primary {
+        margin-top: 20px;        
+    }
+}
