@@ -1,4 +1,5 @@
 <div class="listingsContainer">
+  <h1>Client Properties</h1>
   <map center="33.5000,-112.0000" zoom="9">
     <div ng-repeat="client in clients">
       <marker position="{{client.latitude}},-{{client.longitude}}" on-click="showInfoWindow(event, 'info')"></marker>

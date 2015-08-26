@@ -122,6 +122,12 @@ body {
   .homeContainer a {
     color: white; }
 
+.activityContainer {
+  padding: 1%; }
+  .activityContainer .activityChart {
+    width: 100%;
+    height: 550px; }
+
 .clientsContainer {
   margin-left: 5%; }
   .clientsContainer h1 {
@@ -181,9 +187,12 @@ body {
     font-size: 16pt; }
 
 .listingsContainer {
-  color: black; }
+  color: white; }
+  .listingsContainer h1 {
+    margin-left: 40%; }
   .listingsContainer map {
+    color: black;
     padding: 10px;
     position: absolute;
     width: 85%;
-    height: 90%; }
+    height: 97%; }

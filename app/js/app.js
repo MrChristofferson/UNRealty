@@ -74,13 +74,15 @@ UNRealtyApp.controller('activityCtrl', function($scope, $http){
   console.log('activityCtrl activated')
 
   $scope.chartOptions =  {
-    chart: { type: 'line' },
-    title: { text: 'Fruit Consumption' },
-    xAxis: { categories: ['Apples', 'Bananas', 'Oranges'] },
-    yAxis: { title: { text: 'Fruit eaten' } },
+    chart: { zoomType: 'x' },
+    title: { text: 'Housing Prices' },
+    xAxis: { categories: ['2009', '2010', '2011', '2012', '2013', '2014', '2015'] },
+    yAxis: { title: { text: 'Price' } },
     series: [
-      { name: 'Jane', data: [1, 0, 4] }, 
-      { name: 'John', data: [5, 7, 3] }
+      { name: 'Phoenix', data: [50000, 70000, 90000, 110000, 90000, 81000, 85000] }, 
+      { name: 'Mesa', data: [45000, 71000, 83000, 130000, 130000, 132000, 136000] }, 
+      { name: 'Gilbert', data: [60000, 32000, 55000, 150000, 90000, 60000, 130000] }, 
+      { name: 'USA', data: [45000, 55000, 20000, 60000, 120000, 121000, 120000] }
     ]
   };
 
