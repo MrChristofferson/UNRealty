@@ -55,8 +55,7 @@ input {
   background-color: rgba(0, 0, 0, 0.2); }
 
 body {
-  background-color: rgba(0, 0, 0, 0.1);
-  height: 10px; }
+  background-color: rgba(0, 0, 0, 0.1); }
 
 .mainHeader {
   background-color: rgba(0, 0, 0, 0.5);
@@ -101,16 +100,26 @@ body {
   width: 82%;
   margin-left: 50px; }
 
+.unrealtyLogo {
+  position: absolute;
+  width: 500px;
+  height: 78px;
+  margin-left: 60%; }
+
+.userInfo span {
+  color: white;
+  font-size: 25pt; }
+
 .clientsContainer {
   margin-left: 5%; }
   .clientsContainer h1 {
     text-align: center;
-    font-size: 40pt; }
+    font-size: 32pt; }
   .clientsContainer .clientsTableList {
     overflow-y: scroll;
     font-size: 13pt;
     width: 100%;
-    height: 475px; }
+    height: 460px; }
   .clientsContainer .btn-primary {
     margin-top: 20px; }
 
@@ -134,12 +143,12 @@ body {
   margin-left: 5%; }
   .eventsContainer h1 {
     text-align: center;
-    font-size: 40pt; }
+    font-size: 32pt; }
   .eventsContainer .eventsTableList {
     overflow-y: scroll;
     font-size: 16pt;
     width: 100%;
-    height: 475px; }
+    height: 460px; }
   .eventsContainer .btn-primary {
     margin-top: 20px; }
 
@@ -159,7 +168,10 @@ body {
   .eventAddContainer label, .eventAddContainer input {
     font-size: 16pt; }
 
-.listingsContainer map {
-  position: absolute;
-  width: 82%;
-  height: 85%; }
+.listingsContainer {
+  color: black; }
+  .listingsContainer map {
+    padding: 10px;
+    position: absolute;
+    width: 85%;
+    height: 90%; }

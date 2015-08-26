@@ -13,7 +13,6 @@ input {
 
 body{
   background-color: rgba(0,0,0,0.1);
-  height: 10px;
 }
 
 .mainHeader {
@@ -66,3 +65,16 @@ body{
   margin-left: 50px;
 }
 
+.unrealtyLogo {
+  position: absolute;
+  width: 500px;
+  height: 78px;
+  margin-left: 60%;
+}
+
+.userInfo {
+  span {
+    color: white;
+    font-size: 25pt;
+  }
+}

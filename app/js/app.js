@@ -5,6 +5,7 @@ var $ = require('jquery');
 var googlechart = require('angular-google-chart');
 var _ = require('lodash');
 var ngMap = require('ngMap');
+// var FeedService = require('google-feed-service');
 
 // URLs Cached
 var propertiesURL = 'http://localhost:3000/properties/';
@@ -27,6 +28,12 @@ var UNRealtyApp = angular.module('UNRealtyApp', ['ngRoute', 'googlechart', 'ngMa
     .when('/listings', {templateUrl: 'app/views/listings.html', controller: 'listingsCtrl'})
     .otherwise({templateUrl: 'app/views/404.html'});
 }]);
+
+// Main 
+UNRealtyApp.controller('mainCtrl', function($scope){
+  console.log('mainCtrl activated')
+  $scope.fullName = 'Chaz Fertal';
+});
 
 // Home 
 UNRealtyApp.controller('homeCtrl', function($scope){

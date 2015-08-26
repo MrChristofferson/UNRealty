@@ -24,6 +24,7 @@
     "angular-route": "^1.4.4",
     "bootstrap": "^3.3.5",
     "font-awesome": "^4.4.0",
+    "google-feed-service": "0.0.1",
     "jquery": "^2.1.4",
     "lodash": "^3.10.1",
     "ngmap": "^1.10.0",
