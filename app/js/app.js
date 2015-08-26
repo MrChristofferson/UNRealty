@@ -5,7 +5,7 @@ var $ = require('jquery');
 var googlechart = require('angular-google-chart');
 var _ = require('lodash');
 var ngMap = require('ngMap');
-// var FeedService = require('google-feed-service');
+var ngResource = require('angular-resource');
 
 // URLs Cached
 var propertiesURL = 'http://localhost:3000/properties/';
@@ -13,7 +13,7 @@ var eventsURL = 'http://localhost:3000/events/';
 var agentsURL = 'http//localhost:3000/agents/';
 
 // Router 
-var UNRealtyApp = angular.module('UNRealtyApp', ['ngRoute', 'googlechart', 'ngMap'])
+var UNRealtyApp = angular.module('UNRealtyApp', ['ngRoute', 'googlechart', 'ngMap', 'ngResource'])
   
   UNRealtyApp.config(['$routeProvider', function($routeProvider){
   $routeProvider
@@ -36,8 +36,37 @@ UNRealtyApp.controller('mainCtrl', function($scope){
 });
 
 // Home 
-UNRealtyApp.controller('homeCtrl', function($scope){
-  console.log('homeCtrl activated')
+var feeds = [];
+UNRealtyApp.factory('FeedLoader', function ($resource) {
+  return $resource('http://ajax.googleapis.com/ajax/services/feed/load', {}, {
+    fetch: { method: 'JSONP', params: {v: '1.0', callback: 'JSON_CALLBACK'} }
+  });
+});
+
+UNRealtyApp.service('FeedList', function ($rootScope, FeedLoader) {
+  this.get = function() {
+    var feedSources = [
+      {title: 'Daily Real Estate News', url: 'http://feeds.feedburner.com/dailyrealestatenews'},
+      {title: 'Realtor Headlines', url: 'http://feeds.feedburner.com/RealtororgResearchHeadlines'},
+      {title: 'HousingWire', url: 'http://www.housingwire.com/rss/1'},
+    ];
+    if (feeds.length === 0) {
+      for (var i = 0; i < feedSources.length; i++) {
+        FeedLoader.fetch({q: feedSources[i].url, num: 9}, {}, function (data) {
+          var feed = data.responseData.feed;
+          feeds.push(feed);
+        });
+      }
+    }
+    return feeds;
+  };
+});
+
+UNRealtyApp.controller('homeCtrl', function ($scope, FeedList) {
+  $scope.feeds = FeedList.get();
+  $scope.$on('FeedList', function (event, data) {
+    $scope.feeds = data;
+  });
 });
 
 // Activity 
