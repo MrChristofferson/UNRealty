@@ -330,7 +330,6 @@ UNRealtyApp.controller('listingsCtrl', function($scope, $http, $timeout){
   $http.get(propertiesURL)
     .success(function(props){
         var properties = _.filter(props, {salesAgentId: 1})
-        console.log(properties)
         $scope.clients = properties;
     })
 });

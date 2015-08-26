@@ -1,17 +1,15 @@
-<map zoom="10" center="34.0000, -112.0000" on-center-changed="centerChanged()">
-  <div ng-repeat="client in clients">
-    <marker position="{{client.latitude}}, -{{client.longitude}}" on-click="click()" title="Click to zoom"></marker> 
-  </div>
-</map>
-
-<map center="-25.363882,131.044922" zoom="4">
-  <marker id="foo" position="-25.363882,131.044922" on-click="showInfoWindow(event, 'info')"></marker>
-  <info-window id="info" max-width="200">
-    <div ng-non-bindable="">
-      <h3>Uluru</h3>
-      <div id="bodyContent">
-        HIII
-      </div>
+<div class="listingsContainer">
+  <map center="33.7000,-112.0000" zoom="9">
+    <div ng-repeat="client in clients">
+      <marker id="foo" position="{{client.latitude}},-{{client.longitude}}" on-click="showInfoWindow(event, 'info')"></marker>
+      <info-window id="info" min-width="200">
+        <div ng-non-bindable="">
+          <h3>{{client.clientName}}</h3>
+          <div>
+            HIII
+          </div>
+        </div>
+      </info-window>
     </div>
-  </info-window>
-</map>
+  </map>
+</div>
