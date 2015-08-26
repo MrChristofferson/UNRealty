@@ -142,3 +142,8 @@ body {
     margin-left: 11%; }
   .clientAddContainer label, .clientAddContainer input {
     font-size: 16pt; }
+
+.listingsContainer map {
+  position: absolute;
+  width: 82%;
+  height: 90%; }
