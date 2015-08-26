@@ -36,13 +36,13 @@ UNRealtyApp.controller('mainCtrl', function($scope){
 });
 
 // Home 
-UNRealtyApp.factory('FeedLoader', function ($resource) {
+UNRealtyApp.factory('FeedLoader', function($resource){
   return $resource('http://ajax.googleapis.com/ajax/services/feed/load', {}, {
     fetch: { method: 'JSONP', params: {v: '1.0', callback: 'JSON_CALLBACK'} }
   });
 });
 
-UNRealtyApp.service('FeedList', function ($rootScope, FeedLoader) {
+UNRealtyApp.service('FeedList', function($rootScope, FeedLoader){
   var feeds = [];
   this.get = function() {
     var feedSources = [
@@ -62,7 +62,7 @@ UNRealtyApp.service('FeedList', function ($rootScope, FeedLoader) {
   };
 });
 
-UNRealtyApp.controller('homeCtrl', function ($scope, FeedList) {
+UNRealtyApp.controller('homeCtrl', function($scope, FeedList){
   $scope.feeds = FeedList.get();
   $scope.$on('FeedList', function (event, data) {
     $scope.feeds = data;
@@ -73,175 +73,25 @@ UNRealtyApp.controller('homeCtrl', function ($scope, FeedList) {
 UNRealtyApp.controller('activityCtrl', function($scope, $http){
   console.log('activityCtrl activated')
 
-  // $http.get(propertiesURL)
-  //   .success(function(props){
-  //       var properties = _.filter(props, {salesAgentId: 1})
-  //       console.log(properties)
-  //       properties.forEach(function(prop){
-  //         console.log(prop.housePrice)
-  //       })
-  //     })
-
-  // All Agents 
-  $scope.allAgentsStats = {
-    "type": "LineChart",
-    "displayed": true,
-    "data": {
-      "cols": [
-        {
-          "id": "month",
-          "label": "Month",
-          "type": "string",
-          "p": {}
-        },
-        {
-          "id": "laptop-id",
-          "label": "Laptop",
-          "type": "number",
-          "p": {}
-        },
-        {
-          "id": "desktop-id",
-          "label": "Desktop",
-          "type": "number",
-          "p": {}
-        },
-        {
-          "id": "server-id",
-          "label": "Server",
-          "type": "number",
-          "p": {}
-        },
-        {
-          "id": "cost-id",
-          "label": "Shipping",
-          "type": "number"
-        }
-      ],
-      "rows": [
-        {
-          "c": [
-            {
-              "v": "January"
-            },
-            {
-              "v": 19,
-              "f": "42 items"
-            },
-            {
-              "v": 12,
-              "f": "Ony 12 items"
-            },
-            {
-              "v": 7,
-              "f": "7 servers"
-            },
-            {
-              "v": 4
-            }
-          ]
-        },
-        {
-          "c": [
-            {
-              "v": "February"
-            },
-            {
-              "v": 13
-            },
-            {
-              "v": 1,
-              "f": "1 unit (Out of stock this month)"
-            },
-            {
-              "v": 12
-            },
-            {
-              "v": 2
-            }
-          ]
-        },
-        {
-          "c": [
-            {
-              "v": "March"
-            },
-            {
-              "v": 24
-            },
-            {
-              "v": 5
-            },
-            {
-              "v": 11
-            },
-            {
-              "v": 6
-            }
-          ]
-        }
-      ]
-    },
-    "options": {
-      "title": "Sales per month",
-      "isStacked": "false",
-      "fill": 20,
-      "displayExactValues": true,
-      "vAxis": {
-        "title": "Sales unit",
-        "gridlines": {
-          "count": 10
-        }
-      },
-      "hAxis": {
-        "title": "Date"
-      }
-    },
-    "formatters": {}
+  $scope.chartOptions =  {
+    chart: { type: 'line' },
+    title: { text: 'Fruit Consumption' },
+    xAxis: { categories: ['Apples', 'Bananas', 'Oranges'] },
+    yAxis: { title: { text: 'Fruit eaten' } },
+    series: [
+      { name: 'Jane', data: [1, 0, 4] }, 
+      { name: 'John', data: [5, 7, 3] }
+    ]
   };
 
-  // Agent Quotas
-  $scope.agentQuotasGauges = {
-    "type": "Gauge",
-    "data": [
-      [
-        "Component",
-        "cost"
-      ],
-      [
-        "Software",
-        50000
-      ],
-      [
-        "Hardware",
-        59725
-      ],
-      [
-        "Services",
-        20000
-      ]
-    ],
-    "options": {
-      "displayExactValues": true,
-      "width": 500,
-      "height": 250,
-      "is3D": true,
-      "chartArea": {
-        "left": 10,
-        "top": 10,
-        "bottom": 0,
-        "height": "100%"
-      }
-    },
-    "formatters": {
-      "number": [
-        {
-          "columnNum": 1,
-          "pattern": "$ #,##0.00"
-        }
-      ]
-    },
-    "displayed": true
+});
+UNRealtyApp.directive("highcharts", function() {
+  return {
+    link: function(scope, el, attrs) {
+      var options = scope.$eval(attrs.highcharts);
+      options.chart.renderTo = el[0];
+      new Highcharts.Chart(options);
+    }
   };
 });
 

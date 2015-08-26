@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html ng-app="UNRealtyApp">
-<head>
-  <meta charset='utf-8'>
-  <title>UNRealty</title>
-  <link href="assets/css/main.css" rel="stylesheet">
-</head>
+  <head>
+    <meta charset='utf-8'>
+    <title>UNRealty</title>
+    <link href="assets/css/main.css" rel="stylesheet">
+  </head>
   <body>
     <div class="mainHeader" ng-controller="mainCtrl">
       <div class="userInfo">
@@ -24,10 +24,11 @@
     </nav> 
 
     <div class="viewContainer">
-      <div ng-view></div>
+      <div ng-view>
     </div>
     
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="https://rawgithub.com/highslide-software/highcharts.com/master/js/adapters/standalone-framework.src.js"></script>
+    <script src="http://code.highcharts.com/highcharts.src.js"></script>
     <script src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
     <script type="text/javascript" src="app/dist/bundle.js"></script>
   </body>
