@@ -36,7 +36,6 @@ UNRealtyApp.controller('mainCtrl', function($scope){
 });
 
 // Home 
-var feeds = [];
 UNRealtyApp.factory('FeedLoader', function ($resource) {
   return $resource('http://ajax.googleapis.com/ajax/services/feed/load', {}, {
     fetch: { method: 'JSONP', params: {v: '1.0', callback: 'JSON_CALLBACK'} }
@@ -44,6 +43,7 @@ UNRealtyApp.factory('FeedLoader', function ($resource) {
 });
 
 UNRealtyApp.service('FeedList', function ($rootScope, FeedLoader) {
+  var feeds = [];
   this.get = function() {
     var feedSources = [
       {title: 'Daily Real Estate News', url: 'http://feeds.feedburner.com/dailyrealestatenews'},
@@ -52,7 +52,7 @@ UNRealtyApp.service('FeedList', function ($rootScope, FeedLoader) {
     ];
     if (feeds.length === 0) {
       for (var i = 0; i < feedSources.length; i++) {
-        FeedLoader.fetch({q: feedSources[i].url, num: 9}, {}, function (data) {
+        FeedLoader.fetch({q: feedSources[i].url, num: 20}, {}, function (data) {
           var feed = data.responseData.feed;
           feeds.push(feed);
         });

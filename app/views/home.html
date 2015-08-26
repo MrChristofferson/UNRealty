@@ -1,6 +1,6 @@
-<div ng-repeat="feed in feeds | orderBy:'title'">
-  <h2><a href="{{feed.link}}" target="_blank">{{feed.title}}</a></h2>
-  <p><span ng-repeat="item in feed.entries">
-    <a href="{{item.link}}" target="_blank">{{item.title}}</a><br />
-  </span></p>
+<div class="homeContainer">
+  <div ng-repeat="feed in feeds | orderBy:'title'">
+    <h3><a class="feedHeader" href="{{feed.link}}" target="_blank">{{feed.title}}</a></h3>
+    <p ng-repeat="item in feed.entries"><a href="{{item.link}}" target="_blank">{{item.title}}</a></p>
+  </div>
 </div>
