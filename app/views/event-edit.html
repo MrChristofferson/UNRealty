@@ -1,23 +1,25 @@
-<h2>Edit Event</h2>
-<div class="row">
-  <div class="col-md-6">
-  <form novalidate ng-repeat="event in events" name="AddNewForm" id="add-new-form" method="post" action="" />
-    <input type="hidden" ng-model="event.id" value="{{event.id}}">
-    <div class="form-group">
-      <label for="eventName">Event Name:</label>
-      <input class="form-control" type="text" ng-model="event.eventName" value="{{event.eventName}}" required />
+<div class="eventEditContainer">
+  <h2>Edit Event</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <form novalidate ng-repeat="event in events" name="AddNewForm" id="add-new-form" method="post" action="" />
+        <input type="hidden" ng-model="event.id" value="{{event.id}}">
+        <div class="form-group">
+          <label for="eventName">Event Name:</label>
+          <input class="form-control" type="text" ng-model="event.eventName" value="{{event.eventName}}" required />
+        </div>
+        <div class="form-group">
+          <label for="eventLocation">Location:</label>
+          <input class="form-control" type="text" ng-model="event.eventLocation" value="{{event.eventLocation}}" required />
+        </div>
+        <div class="form-group">
+          <label for="eventDetails">Date:</label>
+          <input class="form-control" type="text" ng-model="event.eventDetails" value="{{event.eventDetails}}" />
+        </div>
+        <button class="btn btn-primary" ng-disabled="AddNewForm.$invalid || isUnchanged(event)" id="add-new-btn" ng-click="update(event)">Update <span class="glyphicon glyphicon-floppy-disk"></span></button>
+        <button class="btn btn-danger" ng-click="delete(event)">Delete <span class="glyphicon glyphicon-trash"></span></button>
+        <a href="#/events" class="btn">Cancel</a>
+      </form>
     </div>
-    <div class="form-group">
-      <label for="eventLocation">Location:</label>
-      <input class="form-control" type="text" ng-model="event.eventLocation" value="{{event.eventLocation}}" required />
-    </div>
-    <div class="form-group">
-      <label for="eventDetails">Date:</label>
-      <input class="form-control" type="text" ng-model="event.eventDetails" value="{{event.eventDetails}}" />
-    </div>
-    <button class="btn btn-primary" ng-disabled="AddNewForm.$invalid || isUnchanged(event)" id="add-new-btn" ng-click="update(event)">Update <span class="glyphicon glyphicon-floppy-disk"></span></button>
-    <button class="btn btn-danger" ng-click="delete(event)">Delete <span class="glyphicon glyphicon-trash"></span></button>
-    <a href="#/events" class="btn">Cancel</a>
-  </form>
-</div>
+  </div>
 </div>

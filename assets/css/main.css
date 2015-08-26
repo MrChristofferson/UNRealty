@@ -114,19 +114,6 @@ body {
   .clientsContainer .btn-primary {
     margin-top: 20px; }
 
-.eventsContainer {
-  margin-left: 5%; }
-  .eventsContainer h1 {
-    text-align: center;
-    font-size: 40pt; }
-  .eventsContainer .eventsTableList {
-    overflow-y: scroll;
-    font-size: 16pt;
-    width: 100%;
-    height: 475px; }
-  .eventsContainer .btn-primary {
-    margin-top: 20px; }
-
 .clientEditContainer {
   margin-left: 30%; }
   .clientEditContainer h1 {
@@ -141,6 +128,35 @@ body {
     font-size: 40pt;
     margin-left: 11%; }
   .clientAddContainer label, .clientAddContainer input {
+    font-size: 16pt; }
+
+.eventsContainer {
+  margin-left: 5%; }
+  .eventsContainer h1 {
+    text-align: center;
+    font-size: 40pt; }
+  .eventsContainer .eventsTableList {
+    overflow-y: scroll;
+    font-size: 16pt;
+    width: 100%;
+    height: 475px; }
+  .eventsContainer .btn-primary {
+    margin-top: 20px; }
+
+.eventEditContainer {
+  margin-left: 30%; }
+  .eventEditContainer h1 {
+    font-size: 40pt;
+    margin-left: 11%; }
+  .eventEditContainer label, .eventEditContainer input {
+    font-size: 16pt; }
+
+.eventAddContainer {
+  margin-left: 30%; }
+  .eventAddContainer h1 {
+    font-size: 40pt;
+    margin-left: 11%; }
+  .eventAddContainer label, .eventAddContainer input {
     font-size: 16pt; }
 
 .listingsContainer map {
