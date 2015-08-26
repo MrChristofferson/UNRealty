@@ -1,29 +1,31 @@
-<h2>Add New Client</h2>
-<div class="row">
-  <div class="col-md-6">
-    <form novalidate name="AddNewForm" id="add-new-form" method="post" action="" />
-      <div class="form-group">
-        <label for="clientLastName">Last Name:</label>
-        <input class="form-control" type="text" ng-model="client.clientLastName" required />
-      </div>
-      <div class="form-group">
-        <label for="propertyType">Buyer or Seller:</label>
-        <input class="form-control" type="text" ng-model="client.propertyType" required />
-      </div>
-      <div class="form-group">
-        <label for="address">Address:</label>
-        <input class="form-control" type="text" ng-model="client.address" required />
-      </div>
-      <div class="form-group">
-        <label for="referralSource">Referral Source:</label>
-        <input class="form-control" type="text" ng-model="client.referralSource" />
-      </div>
-      <div class="form-group">
-        <label for="salesAgentId">Your Agent ID:</label>
-        <input class="form-control" type="text" ng-model="client.salesAgentId" value="{{client.salesAgentId}}" />
-      </div>
-      <button class="btn btn-primary" ng-disabled="AddNewForm.$invalid || isUnchanged(client)" id="add-new-btn" ng-click="add_new(client)">Save!</button>
-      <a href="#/clients" class="btn">Cancel</a>
-    </form>
+<div class="clientAddContainer">
+  <h2>Add New Client</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <form novalidate name="AddNewForm" id="add-new-form" method="post" action="" />
+        <div class="form-group">
+          <label for="clientName">Name:</label>
+          <input class="form-control" type="text" ng-model="client.clientName" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input class="form-control" type="text" ng-model="client.phone" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input class="form-control" type="text" ng-model="client.email" required />
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <input class="form-control" type="text" ng-model="client.address" />
+        </div>
+        <div class="form-group">
+          <label for="salesAgentId">Your Agent ID:</label>
+          <input class="form-control" type="text" ng-model="client.salesAgentId" value="{{client.salesAgentId}}" />
+        </div>
+        <button class="btn btn-primary" ng-disabled="AddNewForm.$invalid || isUnchanged(client)" id="add-new-btn" ng-click="add_new(client)">Save!</button>
+        <a href="#/clients" class="btn">Cancel</a>
+      </form>
+    </div>
   </div>
 </div>

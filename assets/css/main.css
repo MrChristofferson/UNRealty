@@ -127,10 +127,18 @@ body {
   .eventsContainer .btn-primary {
     margin-top: 20px; }
 
-.client-editContainer {
+.clientEditContainer {
   margin-left: 30%; }
-  .client-editContainer h1 {
+  .clientEditContainer h1 {
     font-size: 40pt;
     margin-left: 11%; }
-  .client-editContainer label, .client-editContainer input {
+  .clientEditContainer label, .clientEditContainer input {
+    font-size: 16pt; }
+
+.clientAddContainer {
+  margin-left: 30%; }
+  .clientAddContainer h1 {
+    font-size: 40pt;
+    margin-left: 11%; }
+  .clientAddContainer label, .clientAddContainer input {
     font-size: 16pt; }
