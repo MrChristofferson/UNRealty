@@ -4,27 +4,28 @@ var ngRoute = require('angular-route');
 var $ = require('jquery');
 var googlechart = require('angular-google-chart');
 var _ = require('lodash');
+var ngMap = require('ngMap');
 
 // URLs Cached
 var propertiesURL = 'http://localhost:3000/properties/';
 var eventsURL = 'http://localhost:3000/events/';
-var agentsURL = 'http//localhost:3000/agents/'
+var agentsURL = 'http//localhost:3000/agents/';
 
 // Router 
-var UNRealtyApp = angular.module('UNRealtyApp', ['ngRoute', 'googlechart'])
+var UNRealtyApp = angular.module('UNRealtyApp', ['ngRoute', 'googlechart', 'ngMap'])
   
   UNRealtyApp.config(['$routeProvider', function($routeProvider){
   $routeProvider
-      .when('/', {templateUrl: 'app/views/home.html', controller: 'homeCtrl'})
-      .when('/activity', {templateUrl: 'app/views/activity.html', controller: 'activityCtrl'})
-      .when('/clients', {templateUrl: 'app/views/clients.html', controller: 'clientListCtrl'})
-      .when('/add-client', {templateUrl: 'app/views/client-add.html', controller: 'clientAddCtrl'})
-      .when('/edit-client/:id', {templateUrl: 'app/views/client-edit.html', controller: 'clientEditCtrl'})
-      .when('/events', {templateUrl: 'app/views/events.html', controller: 'eventListCtrl'})
-      .when('/add-event', {templateUrl: 'app/views/event-add.html', controller: 'eventAddCtrl'})
-      .when('/edit-event/:id', {templateUrl: 'app/views/event-edit.html', controller: 'eventEditCtrl'})
-      .when('/listings', {templateUrl: 'app/views/listings.html', controller: 'listingsCtrl'})
-      .otherwise({templateUrl: 'app/views/404.html'});
+    .when('/', {templateUrl: 'app/views/home.html', controller: 'homeCtrl'})
+    .when('/activity', {templateUrl: 'app/views/activity.html', controller: 'activityCtrl'})
+    .when('/clients', {templateUrl: 'app/views/clients.html', controller: 'clientListCtrl'})
+    .when('/add-client', {templateUrl: 'app/views/client-add.html', controller: 'clientAddCtrl'})
+    .when('/edit-client/:id', {templateUrl: 'app/views/client-edit.html', controller: 'clientEditCtrl'})
+    .when('/events', {templateUrl: 'app/views/events.html', controller: 'eventListCtrl'})
+    .when('/add-event', {templateUrl: 'app/views/event-add.html', controller: 'eventAddCtrl'})
+    .when('/edit-event/:id', {templateUrl: 'app/views/event-edit.html', controller: 'eventEditCtrl'})
+    .when('/listings', {templateUrl: 'app/views/listings.html', controller: 'listingsCtrl'})
+    .otherwise({templateUrl: 'app/views/404.html'});
 }]);
 
 // Home 
@@ -324,8 +325,22 @@ UNRealtyApp.controller('eventEditCtrl', function($scope, $http, $location, $rout
 });
 
 // Listings 
-UNRealtyApp.controller('listingsCtrl', function(){
+UNRealtyApp.controller('listingsCtrl', function($scope){
   console.log('listingsCtrl activated')
+    angular.extend($scope, {
+      centerProperty: {
+        lat: 45,
+        lng: -73
+      },
+      zoomProperty: 8,
+      markersProperty: [ {
+          latitude: 45,
+          longitude: -74
+        }],
+      clickedLatitudeProperty: null,  
+      clickedLongitudeProperty: null,
+    });
+
 });
 
 

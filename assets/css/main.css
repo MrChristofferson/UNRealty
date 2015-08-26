@@ -142,3 +142,16 @@ body {
     margin-left: 11%; }
   .clientAddContainer label, .clientAddContainer input {
     font-size: 16pt; }
+
+.listingsContainer #map {
+  height: 420px;
+  width: 600px; }
+
+.listingsContainer .infoWindowContent {
+  font-size: 14px !important;
+  border-top: 1px solid #ccc;
+  padding-top: 10px; }
+
+.listingsContainer h2 {
+  margin-bottom: 0;
+  margin-top: 0; }
