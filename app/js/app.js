@@ -325,22 +325,14 @@ UNRealtyApp.controller('eventEditCtrl', function($scope, $http, $location, $rout
 });
 
 // Listings 
-UNRealtyApp.controller('listingsCtrl', function($scope){
+UNRealtyApp.controller('listingsCtrl', function($scope, $http, $timeout){
   console.log('listingsCtrl activated')
-    angular.extend($scope, {
-      centerProperty: {
-        lat: 45,
-        lng: -73
-      },
-      zoomProperty: 8,
-      markersProperty: [ {
-          latitude: 45,
-          longitude: -74
-        }],
-      clickedLatitudeProperty: null,  
-      clickedLongitudeProperty: null,
-    });
-
+  $http.get(propertiesURL)
+    .success(function(props){
+        var properties = _.filter(props, {salesAgentId: 1})
+        console.log(properties)
+        $scope.clients = properties;
+    })
 });
 
 

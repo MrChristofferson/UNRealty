@@ -1,5 +1,17 @@
-<map zoom="11" center="[40.74, -74.18]">
-  <marker position="[40.74, -74.18]" />
-  <shape name="circle" radius="400" center="[40.74,-74.18]" radius="4000" />
-  <control name="overviewMap" opened="true" />
-</map>` 
+<map zoom="10" center="34.0000, -112.0000" on-center-changed="centerChanged()">
+  <div ng-repeat="client in clients">
+    <marker position="{{client.latitude}}, -{{client.longitude}}" on-click="click()" title="Click to zoom"></marker> 
+  </div>
+</map>
+
+<map center="-25.363882,131.044922" zoom="4">
+  <marker id="foo" position="-25.363882,131.044922" on-click="showInfoWindow(event, 'info')"></marker>
+  <info-window id="info" max-width="200">
+    <div ng-non-bindable="">
+      <h3>Uluru</h3>
+      <div id="bodyContent">
+        HIII
+      </div>
+    </div>
+  </info-window>
+</map>
