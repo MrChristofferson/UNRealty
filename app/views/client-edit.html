@@ -3,7 +3,7 @@
   <h1>Edit client</h1>
   <div class="row">
     <div class="col-md-6">
-      <form novalidate ng-repeat="client in clients" name="AddNewForm" id="add-new-form" method="post" action="">
+      <form novalidate ng-repeat="client in clients" name="AddNewForm" id="add-new-form" />
         <input type="hidden" ng-model="client.id" value="{{client.id}}" />
         <div class="form-group">
           <label for="clientName">Last Name:</label>

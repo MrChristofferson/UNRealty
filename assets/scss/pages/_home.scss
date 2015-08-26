@@ -1,13 +1,16 @@
 .homeContainer {
   margin: 10px 0 0 5%;
   overflow-y: scroll;
-  width: 100%;
+  width: 75%;
   height: 600px;
+  border-bottom: 3px solid rgba(255,255,255,0.3);
+  border-top: 3px solid rgba(255,255,255,0.3);
   h3 {
     font-size: 32pt;
   }
   p {
     font-size: 16pt;
+    margin-left: 30px;
   }
   a {
     color: white;

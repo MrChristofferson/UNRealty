@@ -2,7 +2,7 @@
   <h2>Add New Client</h2>
   <div class="row">
     <div class="col-md-6">
-      <form novalidate name="AddNewForm" id="add-new-form" method="post" action="" />
+      <form novalidate name="AddNewForm" id="add-new-form" />
         <div class="form-group">
           <label for="clientName">Name:</label>
           <input class="form-control" type="text" ng-model="client.clientName" required />
@@ -23,7 +23,7 @@
           <label for="salesAgentId">Your Agent ID:</label>
           <input class="form-control" type="text" ng-model="client.salesAgentId" value="{{client.salesAgentId}}" />
         </div>
-        <button class="btn btn-primary" ng-disabled="AddNewForm.$invalid || isUnchanged(client)" id="add-new-btn" ng-click="add_new(client)">Save!</button>
+        <button class="btn btn-primary" ng-disabled="AddNewForm.$invalid || isUnchanged(client)" id="add-new-btn btn-md" ng-click="add_new(client)">Save</button>
         <a href="#/clients" class="btn">Cancel</a>
       </form>
     </div>

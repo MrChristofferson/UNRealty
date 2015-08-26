@@ -15,7 +15,7 @@ var agentsURL = 'http//localhost:3000/agents/';
 // Router 
 var UNRealtyApp = angular.module('UNRealtyApp', ['ngRoute', 'googlechart', 'ngMap', 'ngResource'])
   
-  UNRealtyApp.config(['$routeProvider', function($routeProvider){
+UNRealtyApp.config(['$routeProvider', function($routeProvider){
   $routeProvider
     .when('/', {templateUrl: 'app/views/home.html', controller: 'homeCtrl'})
     .when('/activity', {templateUrl: 'app/views/activity.html', controller: 'activityCtrl'})
@@ -31,7 +31,6 @@ var UNRealtyApp = angular.module('UNRealtyApp', ['ngRoute', 'googlechart', 'ngMa
 
 // Main 
 UNRealtyApp.controller('mainCtrl', function($scope){
-  console.log('mainCtrl activated')
   $scope.fullName = 'Chaz Fertal';
 });
 
@@ -46,9 +45,9 @@ UNRealtyApp.service('FeedList', function($rootScope, FeedLoader){
   var feeds = [];
   this.get = function() {
     var feedSources = [
-      {title: 'Daily Real Estate News', url: 'http://feeds.feedburner.com/dailyrealestatenews'},
       {title: 'Realtor Headlines', url: 'http://feeds.feedburner.com/RealtororgResearchHeadlines'},
       {title: 'HousingWire', url: 'http://www.housingwire.com/rss/1'},
+      // {title: 'Daily Real Estate News', url: 'http://feeds.feedburner.com/dailyrealestatenews'},
     ];
     if (feeds.length === 0) {
       for (var i = 0; i < feedSources.length; i++) {
@@ -64,16 +63,14 @@ UNRealtyApp.service('FeedList', function($rootScope, FeedLoader){
 
 UNRealtyApp.controller('homeCtrl', function($scope, FeedList){
   $scope.feeds = FeedList.get();
-  $scope.$on('FeedList', function (event, data) {
+  $scope.$on('FeedList', function(event, data) {
     $scope.feeds = data;
   });
 });
 
 // Activity 
 UNRealtyApp.controller('activityCtrl', function($scope, $http){
-  console.log('activityCtrl activated')
-
-  $scope.chartOptions =  {
+  $scope.chartOptions1 =  {
     chart: { zoomType: 'x' },
     title: { text: 'Housing Prices' },
     xAxis: { categories: ['2009', '2010', '2011', '2012', '2013', '2014', '2015'] },
@@ -85,8 +82,8 @@ UNRealtyApp.controller('activityCtrl', function($scope, $http){
       { name: 'USA', data: [45000, 55000, 20000, 60000, 120000, 121000, 120000] }
     ]
   };
-
 });
+
 UNRealtyApp.directive("highcharts", function() {
   return {
     link: function(scope, el, attrs) {
@@ -99,29 +96,24 @@ UNRealtyApp.directive("highcharts", function() {
 
 // Clients 
 UNRealtyApp.controller('clientListCtrl', function($scope, $http){
-  console.log('clientListCtrl activated')
   $http.get(propertiesURL)
     .success(function(props){
         var properties = _.filter(props, {salesAgentId: 1})
-        console.log(properties)
         $scope.clients = properties;
       })
 }); 
 
 UNRealtyApp.controller('clientAddCtrl', function($scope, $http, $location){
-  console.log('clientAddCtrl activated')
   $scope.master = {};
   $scope.activePath = null;
 
   $scope.add_new = function(client, AddNewForm) {
-    console.log('add_new activated')
     $http.post('http://localhost:3000/properties/', client).success(function(){
       $scope.reset();
       $scope.activePath = $location.path('/clients');
     });
 
     $scope.reset = function() {
-      console.log('reset activated')
       $scope.client = angular.copy($scope.master);
     };
     $scope.reset();
@@ -129,7 +121,6 @@ UNRealtyApp.controller('clientAddCtrl', function($scope, $http, $location){
 });
 
 UNRealtyApp.controller('clientEditCtrl', function($scope, $http, $location, $routeParams){
-  console.log('clientEditCtrl activated')
   var id = $routeParams.id;
   $scope.activePath = null;
   $http.get('http://localhost:3000/properties/' + id).success(function(data) {
@@ -137,16 +128,13 @@ UNRealtyApp.controller('clientEditCtrl', function($scope, $http, $location, $rou
   });
 
   $scope.update = function(client){
-    console.log('update activated')
     $http.put('http://localhost:3000/properties/' + id, client).success(function(data) {
-      console.log('why do you not get here')
       $scope.clients = [data];
       $scope.activePath = $location.path('clients');
     });
   };
 
   $scope.delete = function(client) {
-    console.log('delete activated')
     var deleteClient = confirm('Are you sure you want to delete?');
     if (deleteClient) {
       $http.delete('http://localhost:3000/properties/' + client.id);
@@ -157,29 +145,24 @@ UNRealtyApp.controller('clientEditCtrl', function($scope, $http, $location, $rou
 
 // Events 
 UNRealtyApp.controller('eventListCtrl', function($scope, $http){
-  console.log('eventListCtrl activated')
   $http.get(eventsURL)
     .success(function(events){
         var events = _.filter(events, {salesAgentId: 1})
-        console.log(events)
         $scope.events = events;
       })
 }); 
 
 UNRealtyApp.controller('eventAddCtrl', function($scope, $http, $location){
-  console.log('eventAddCtrl activated')
   $scope.master = {};
   $scope.activePath = null;
 
   $scope.add_new = function(event, AddNewForm) {
-    console.log('add_new activated')
     $http.post('http://localhost:3000/events/', event).success(function(){
       $scope.reset();
       $scope.activePath = $location.path('/events');
     });
 
     $scope.reset = function() {
-      console.log('reset activated')
       $scope.event = angular.copy($scope.master);
     };
     $scope.reset();
@@ -187,7 +170,6 @@ UNRealtyApp.controller('eventAddCtrl', function($scope, $http, $location){
 });
 
 UNRealtyApp.controller('eventEditCtrl', function($scope, $http, $location, $routeParams){
-  console.log('eventEditCtrl activated')
   var id = $routeParams.id;
   $scope.activePath = null;
   $http.get('http://localhost:3000/events/' + id).success(function(data) {
@@ -195,15 +177,13 @@ UNRealtyApp.controller('eventEditCtrl', function($scope, $http, $location, $rout
   });
 
   $scope.update = function(event){
-    console.log('update activated')
     $http.put('http://localhost:3000/events/' + id, event).success(function(data) {
       $scope.events = data;
       $scope.activePath = $location.path('events');
     });
   };
 
-  $scope.delete = function(event) {
-    console.log('delete activated')
+  $scope.delete = function(event){
     var deleteEvent = confirm('Are you sure you want to delete?');
     if (deleteEvent) {
       $http.delete('http://localhost:3000/events/' + event.id);
@@ -214,7 +194,6 @@ UNRealtyApp.controller('eventEditCtrl', function($scope, $http, $location, $rout
 
 // Listings 
 UNRealtyApp.controller('listingsCtrl', function($scope, $http, $timeout){
-  console.log('listingsCtrl activated')
   $http.get(propertiesURL)
     .success(function(props){
         var properties = _.filter(props, {salesAgentId: 1})

@@ -24,15 +24,15 @@
     {
       "id": "55dd373122678611c16cfd2f",
       "eventLocation": "799 Hewes Street",
-      "eventDetails": "5-11-2015",
-      "eventName": "proident irure",
+      "eventDetails": "10-11-2015",
+      "eventName": "Party in the Park",
       "salesAgentId": 1
     },
     {
       "id": "55dd37313d42fc152e21a336",
       "eventLocation": "544 Randolph Street",
-      "eventDetails": "7-14-2015",
-      "eventName": "laborum labore",
+      "eventDetails": "9-14-2015",
+      "eventName": "Labor Day",
       "salesAgentId": 1
     },
     {
@@ -52,8 +52,8 @@
     {
       "id": "55dd373173f15b740f71846f",
       "eventLocation": "776 Seacoast Terrace",
-      "eventDetails": "6-04-2015",
-      "eventName": "eiusmod dolor",
+      "eventDetails": "6-04-2016",
+      "eventName": "Client Appreciation",
       "salesAgentId": 1
     },
     {
@@ -95,7 +95,7 @@
       "id": "55dd3731e14c25fe4b790f50",
       "eventLocation": "904 Vanderveer Place",
       "eventDetails": "8-18-2015",
-      "eventName": "nisi in",
+      "eventName": "Jeff's Birthday",
       "salesAgentId": 1
     },
     {
@@ -122,15 +122,15 @@
     {
       "id": "55dd3731f73d0b3d73c5856d",
       "eventLocation": "599 Tabor Court",
-      "eventDetails": "4-06-2015",
-      "eventName": "sint id",
+      "eventDetails": "4-06-2016",
+      "eventName": "Food Truck",
       "salesAgentId": 1
     },
     {
       "id": "55dd373123773b9c0c30b42f",
       "eventLocation": "501 Kensington Street",
-      "eventDetails": "5-09-2015",
-      "eventName": "id consequat",
+      "eventDetails": "5-09-2016",
+      "eventName": "Silent Auction",
       "salesAgentId": 1
     },
     {
@@ -143,8 +143,8 @@
     {
       "id": "55dd3731511b6cdfae74d6de",
       "eventLocation": "410 Williamsburg Street",
-      "eventDetails": "3-13-2015",
-      "eventName": "cupidatat dolor",
+      "eventDetails": "3-13-2016",
+      "eventName": "Golf Tournament",
       "salesAgentId": 1
     },
     {
@@ -165,42 +165,42 @@
       "id": "55dd373124d35eed4f9c17da",
       "eventLocation": "911 Hoyt Street",
       "eventDetails": "5-12-2015",
-      "eventName": "cupidatat ad",
+      "eventName": "Bake Sale",
       "salesAgentId": 1
     },
     {
       "id": "55dd3731cc5fbdadc7ea53ff",
       "eventLocation": "163 Seigel Court",
-      "eventDetails": "3-15-2015",
-      "eventName": "nostrud in",
+      "eventDetails": "3-15-2016",
+      "eventName": "St. Patrick's Day",
       "salesAgentId": 1
     },
     {
       "id": "55dd37311e6199119b685b35",
       "eventLocation": "789 Lake Street",
-      "eventDetails": "5-11-2015",
-      "eventName": "sint nisi",
+      "eventDetails": "10-31-2015",
+      "eventName": "Halloween Party",
       "salesAgentId": 1
     },
     {
       "id": "55dd3731a9696a0ccdcd4baa",
       "eventLocation": "105 Auburn Place",
-      "eventDetails": "3-15-2015",
-      "eventName": "deserunt in",
+      "eventDetails": "8-15-2015",
+      "eventName": "Networking Dinner",
       "salesAgentId": 1
     },
     {
       "id": "55dd3731c0dc8ed63ff961f2",
       "eventLocation": "320 Mersereau Court",
-      "eventDetails": "1-04-2015",
-      "eventName": "ipsum nulla",
+      "eventDetails": "10-04-2015",
+      "eventName": "Fun-Raiser",
       "salesAgentId": 1
     },
     {
       "id": "55dd373138ac72aa2ae73097",
       "eventLocation": "540 Downing Street",
-      "eventDetails": "2-28-2015",
-      "eventName": "non consequat",
+      "eventDetails": "2-28-2017",
+      "eventName": "Movies",
       "salesAgentId": 1
     },
     {
@@ -291,7 +291,7 @@
       "salesAgentId": 1,
       "housePrice": 137776.89,
       "clientName": "Dionne Mcmillan",
-      "email": "dionnemcmillan@slofast.com",
+      "email": "dionnemcmillan@gmail.com",
       "phone": "+1 (950) 490-2169",
       "address": "992 Sands Street, Phoenix, AZ",
       "latitude": 33.4081,
@@ -339,7 +339,7 @@
       "salesAgentId": 1,
       "housePrice": 112161.27,
       "clientName": "Wiggins Farley",
-      "email": "wigginsfarley@slofast.com",
+      "email": "wigginsfarley@gmail.com",
       "phone": "+1 (812) 427-2551",
       "address": "759 Scott Avenue, Phoenix, AZ",
       "latitude": 33.5727,
@@ -375,7 +375,7 @@
       "salesAgentId": 1,
       "housePrice": 61812.57,
       "clientName": "Rogers Mcleod",
-      "email": "rogersmcleod@slofast.com",
+      "email": "rogersmcleod@gmail.com",
       "phone": "+1 (868) 468-2100",
       "address": "979 Crooke Avenue, Phoenix, AZ",
       "latitude": 33.9644,
@@ -399,7 +399,7 @@
       "salesAgentId": 1,
       "housePrice": 130139.98,
       "clientName": "Jill Hickman",
-      "email": "jillhickman@slofast.com",
+      "email": "jillhickman@gmail.com",
       "phone": "+1 (893) 545-2317",
       "address": "621 Fenimore Street, Phoenix, AZ",
       "latitude": 33.2015,

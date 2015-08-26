@@ -27,6 +27,7 @@
     "feed-read": "0.0.1",
     "font-awesome": "^4.4.0",
     "google-feed-service": "0.0.1",
+    "hover.css": "^2.0.2",
     "jquery": "^2.1.4",
     "lodash": "^3.10.1",
     "ngmap": "^1.10.0",
